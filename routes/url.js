@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
   res.send(urls);
 });
 
-const baseUrl = "http:localhost:5000";
+const baseUrl = "https://urlshrtenr.herokuapp.com";
 router.post("/shorten", async (req, res) => {
   const { longUrl } = req.body;
   //check base url
